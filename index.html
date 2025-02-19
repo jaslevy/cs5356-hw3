@@ -1,21 +1,33 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eggo</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 text-gray-900 flex flex-col items-center justify-center min-h-screen">
+<body class="bg-blue-100 text-gray-900 flex flex-col items-center justify-center min-h-screen p-4">
     <header class="w-full bg-blue-600 text-white text-center py-4 shadow-md">
+        <h1 class="text-4xl font-bold">Meet Eggo 🐶</h1>
+        <p class="text-lg">A rambunctious Samoyed full of energy and love!</p>
     </header>
-    
     <main class="mt-6 p-4 w-full max-w-2xl bg-white rounded-lg shadow-lg text-center">
-        <img src="images/profile.jpg" alt="Jasper's profile" class="w-32 h-32 rounded-full mx-auto border-4 border-blue-500 shadow-lg">
-        <h2 class="text-xl font-semibold mt-4">Eggo/h2>
-        <p class="mt-2 text-gray-700">Hello world</p>
+        <img src="images/eggo_main.jpg" alt="Eggo the Samoyed" class="w-48 h-48 rounded-full mx-auto border-4 border-black-500 shadow-lg">
+        <section class="mt-6">
+            <h2 class="text-2xl font-semibold">About Eggo</h2>
+            <p class="mt-2 text-gray-700 text-lg">
+                Eggo is a playful Samoyed who loves to run, play fetch, and meet new friends. His fluffy white coat and friendly demeanor make him a favorite at the local park.
+            </p>
+        </section>
+        <section class="mt-8">
+            <h2 class="text-2xl font-semibold mb-4">Some of my friends from the park</h2>
+            <div id="friends-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            </div>
+        </section>
+        <section id="weather-activity" class="mt-8">
+        </section>
     </main>
-
     <script src="script.js"></script>
 </body>
 </html>
