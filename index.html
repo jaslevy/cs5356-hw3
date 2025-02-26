@@ -7,25 +7,40 @@
     <title>Eggo</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-blue-100 text-gray-900 flex flex-col items-center justify-center min-h-screen p-4">
-    <header class="w-full bg-blue-600 text-white text-center py-4 shadow-md">
+<body class="bg-white-100 text-gray-900 flex flex-col items-center justify-center min-h-screen p-4">
+    <header class="w-full bg-white-200 text-black text-center py-4 shadow-md">
         <h1 class="text-4xl font-bold">Meet Eggo 🐶</h1>
         <p class="text-lg">A rambunctious Samoyed full of energy and love!</p>
+        <nav class="mt-4">
+            <a href="#about" class="text-gray-500 hover:underline mx-4">About</a>
+            <a href="#friends" class="text-gray-500 hover:underline mx-4">Friends</a>
+            <a href="#weather-activity" class="text-gray-500 hover:underline mx-4">Weather</a>
+            <a href="#video" class="text-gray-500 hover:text-gray-700 hover:underline mx-4">Video</a>
+        </nav>
     </header>
-    <main class="mt-6 p-4 w-full max-w-2xl bg-white rounded-lg shadow-lg text-center">
+
+    <main class="frosted-glass mt-6 p-4 w-full max-w-2xl bg-white rounded-lg shadow-lg text-center">
         <img src="images/eggo_main.jpg" alt="Eggo the Samoyed" class="w-48 h-48 rounded-full mx-auto border-4 border-black-500 shadow-lg">
-        <section class="mt-6">
+        <section class="mt-6" id="about">
             <h2 class="text-2xl font-semibold">About Eggo</h2>
             <p class="mt-2 text-gray-700 text-lg">
                 Eggo is a playful Samoyed who loves to run, play fetch, and meet new friends. His fluffy white coat and friendly demeanor make him a favorite at the local park.
             </p>
         </section>
-        <section class="mt-8">
+        <section class="mt-8" id="friends">
             <h2 class="text-2xl font-semibold mb-4">Some of my friends from the park</h2>
             <div id="friends-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             </div>
         </section>
         <section id="weather-activity" class="mt-8">
+        </section>
+        <section id="video" class="mt-8 flex flex-col items-center justify-center">
+            <h2 class="text-2xl font-semibold mb-4">Eggo in Action 🎥</h2>
+            <video controls class="w-full max-w-lg rounded-lg shadow-lg mx-auto">
+                <source src="videos/Eggvid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="mt-2 text-gray-700 text-lg text-center">Watch Eggo having fun at the park!</p>
         </section>
     </main>
     <script src="script.js"></script>
