@@ -4,7 +4,7 @@ html {
 
 
 body {
-    cursor: url('images/egg_cursor.svg') 32 32, auto;
+    cursor: url('/images/egg_cursor.svg'), auto;
 }
 
 /* nav a:hover {
