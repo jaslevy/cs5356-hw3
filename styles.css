@@ -4,12 +4,12 @@ html {
 
 
 body {
-    cursor: url('images/samoyed_transparent.png') 32 32, auto;
+    cursor: url('images/egg_cursor.svg') 32 32, auto;
 }
 
-nav a:hover {
+/* nav a:hover {
     cursor: url('images/baby_sammy.png') 32 32, auto;
-}
+} */
 
 .video-scroll-container {
     display: flex;
