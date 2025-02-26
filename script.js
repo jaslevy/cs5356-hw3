@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Fetch and display Eggo's friends
     const friendsContainer = document.getElementById("friends-container");
 
     fetch("https://dog.ceo/api/breeds/image/random/6")
@@ -15,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch(error => console.error("Error fetching friends images:", error));
 
-    // Fetch New York weather data using Open-Meteo
     const weatherUrl = "https://api.open-meteo.com/v1/forecast?latitude=40.71&longitude=-74.01&current=temperature_2m";
 
     fetch(weatherUrl)
@@ -28,13 +26,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (temp < 32) {
                 activityMessage = "It's below freezing! Perfect weather for fun in the snow. ❄️";
-                activityImage = 'snow.jpg';
+                activityImage = 'images/snow.jpg';
             } else if (temp >= 32 && temp <= 72) {
                 activityMessage = "The weather is moderate. Let's head to the dog park! 🐾";
-                activityImage = 'park.jpg';
+                activityImage = 'images/park.jpg';
             } else {
-                activityMessage = "It's hot outside! Time for a pool day. 🏊‍♂️";
-                activityImage = 'pool.jpg';
+                activityMessage = "It's hot outside! Time for a beach day. 🏊‍♂️";
+                activityImage = 'images/beach.jpg';
             }
 
             weatherActivity.innerHTML = `
