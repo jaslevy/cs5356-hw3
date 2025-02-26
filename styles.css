@@ -1,12 +1,12 @@
-.frosted-glass {
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    padding: 15px;
+html {
+    scroll-behavior: smooth;
 }
 
-.mask-heart {
-    -webkit-mask-image: url('heart-shape.svg');
-    mask-image: url('heart-shape.svg');
+
+body {
+    cursor: url('images/samoyed_transparent.png') 32 32, auto;
 }
 
+nav a:hover {
+    cursor: url('images/baby_sammy.png') 32 32, auto;
+}
