@@ -24,10 +24,10 @@ document.addEventListener("DOMContentLoaded", () => {
             let activityMessage = '';
             let activityImage = '';
 
-            if (temp < 32) {
+            if (temp < 0) {
                 activityMessage = "It's below freezing! Perfect weather for fun in the snow. ❄️";
                 activityImage = 'images/snow.jpg';
-            } else if (temp >= 32 && temp <= 72) {
+            } else if (temp >= 0 && temp <= 22.22) {
                 activityMessage = "The weather is moderate. Let's head to the dog park! 🐾";
                 activityImage = 'images/park.jpg';
             } else {
