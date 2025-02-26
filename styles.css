@@ -4,7 +4,7 @@ html {
 
 
 body {
-    cursor: url('images/samoyed_transparent.cur'), auto;
+    cursor: url('images/samoyed_transparent_small.png') 32 32, auto; /* Adjust the x and y coordinates as needed */
 }
 
 /* nav a:hover {
