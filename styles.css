@@ -10,3 +10,19 @@ body {
 nav a:hover {
     cursor: url('images/baby_sammy.png') 32 32, auto;
 }
+
+.video-scroll-container {
+    display: flex;
+    gap: 20px; 
+    overflow-x: auto; 
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+.video-item {
+    flex: 0 0 auto; 
+    width: 350px; 
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
